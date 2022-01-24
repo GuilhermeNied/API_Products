@@ -3,18 +3,18 @@ import { Request, Response } from 'express'
 import { prismaClient } from '../../../database/prismaClient'
 import { badRequest } from '../../../services/errorsTreatment'
 
-export class CreateProductController {
+export class CreateUserController {
   async handle(request: Request, response: Response) {
-    const { name, product_code, price } = request.body
+    const { name, email, password } = request.body
 
-    const product = await prismaClient.product.create({
+    const user = await prismaClient.user.create({
       data: {
         name,
-        product_code,
-        price
+        email,
+        password
       }
     })
 
-    return response.json(product)
+    return response.json(user)
   }
 }
