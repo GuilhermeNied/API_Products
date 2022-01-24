@@ -4,10 +4,10 @@ import { DeleteProductController } from './useCases/ProductCase/DeleteProductCon
 import { ListProductByIdController } from './useCases/ProductCase/ListProductById/ListProductByIdController'
 import { ListProductsController } from './useCases/ProductCase/ListProducts/ListProductsController'
 import { UpdateProductController } from './useCases/ProductCase/UpdateProductController/UpdateProductController'
-import { CreateUserController } from './useCases/UserControlller/CreateUserController/CreateUserController'
-import { DeleteUserController } from './useCases/UserControlller/DeleteUserController/DeleteUserController'
-import { ListUserController } from './useCases/UserControlller/ListUsersController/ListUsersController'
-import { UpdateUserController } from './useCases/UserControlller/UpdateUserController/UpdateUserCotnroller'
+import { CreateUserController } from './useCases/UserCase/CreateUserController/CreateUserController'
+import { DeleteUserController } from './useCases/UserCase/DeleteUserController/DeleteUserController'
+import { ListUserController } from './useCases/UserCase/ListUsersController/ListUsersController'
+import { UpdateUserController } from './useCases/UserCase/UpdateUserController/UpdateUserCotnroller'
 
 const router = Router()
 
